@@ -1,0 +1,84 @@
+<app-header></app-header>
+
+<body class="form-container">
+    <div class="profile">
+        <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+            <a routerLink="/home"><i class="fa-solid fa-xmark"></i></a>
+            <div class="profile-header">
+                <h2>{{ 'profile.profile' | translate }}</h2>
+                <img [src]="avatarUrl" alt="tu fotografia" class="user-img" />
+
+            </div>
+            <div>
+                <p class="title-input">{{ 'profile.name' | translate }}</p>
+                <mat-label>
+                    <input formControlName="name" class="input_blank" placeholder="{{ 'profile.name' | translate }}"
+                        id="name" />
+                </mat-label>
+                <mat-error
+                    *ngIf="profileForm.get('name')?.invalid && (profileForm.get('name')?.dirty || profileForm.get('name')?.touched)">
+                    <small class="error" *ngIf="profileForm.get('name')?.errors?.['required']">{{ 'errors.name' |
+                        translate
+                        }}.</small>
+                </mat-error>
+            </div>
+            <div>
+                <p class="title-input">{{ 'profile.firstName' | translate }}</p>
+                <mat-label>
+                    <input formControlName="firstName" class="input_blank"
+                        placeholder="{{ 'profile.placeholderFirstName' | translate }}" id="firstName" />
+                </mat-label>
+                <mat-error
+                    *ngIf="profileForm.get('firstName')?.invalid && (profileForm.get('firstName')?.dirty || profileForm.get('firstName')?.touched)">
+                    <small class="error" *ngIf="profileForm.get('firstName')?.errors?.['required']">{{
+                        'errors.firstName' | translate
+                        }}</small>
+                </mat-error>
+            </div>
+            <div>
+                <p class="title-input">{{ 'profile.lastName' | translate }}</p>
+                <mat-label>
+                    <input formControlName="lastName" class="input_blank"
+                        placeholder="{{ 'profile.placeholderLastName' | translate }}" id="lastName" />
+                </mat-label>
+                <mat-error
+                    *ngIf="profileForm.get('lastName')?.invalid && (profileForm.get('lastName')?.dirty || profileForm.get('lastName')?.touched)">
+                    <small class="error" *ngIf="profileForm.get('lastName')?.errors?.['required']">{{ 'errors.lastName'
+                        | translate
+                        }}</small>
+                </mat-error>
+            </div>
+            <div class="email">
+                <p class="title-input">{{ 'profile.email' | translate }}</p>
+                <mat-label>
+                    <input formControlName="email" class="input_blank" placeholder="nombre@email.com" id="email" />
+                </mat-label>
+                <mat-error
+                    *ngIf="profileForm.get('email')?.invalid && (profileForm.get('email')?.dirty || profileForm.get('email')?.touched)">
+                    <small class="error" *ngIf="profileForm.get('email')?.errors?.['required']">{{ 'errors.emailError' |
+                        translate
+                        }}</small>
+                    <small class="error" *ngIf="profileForm.get('email')?.errors?.['email']">{{ 'errors.invalidEmail' |
+                        translate
+                        }}</small>
+                </mat-error>
+            </div>
+            <div class="adress">
+                <p class="title-input">{{ 'profile.adress' | translate }}</p>
+                <mat-label>
+                    <input formControlName="adress" type="adress" class="input_blank"
+                        placeholder="{{ 'profile.adress' | translate }}" id="adress" />
+                </mat-label>
+                <mat-error
+                    *ngIf="profileForm.get('adress')?.invalid && (profileForm.get('adress')?.dirty || profileForm.get('adress')?.touched)">
+                    <small class="error" *ngIf="profileForm.get('email')?.errors?.['required']">{{ 'errors.adress' |
+                        translate
+                        }}</small>
+                </mat-error>
+            </div>
+            <div>
+                <button class="button-modal" type="submit">{{ 'profile.save' | translate }}</button>
+            </div>
+        </form>
+    </div>
+</body>

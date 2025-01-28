@@ -1,0 +1,54 @@
+{
+  "login": {
+    "title": "Acceso al área privada",
+    "email": "Email",
+    "password": "Contraseña",
+    "submit": "Acceder",
+    "placeholderPassword": "Tu contraseña"
+  },
+  "header": {
+    "updateProfile": "Editar perfil",
+    "logout": "Cerrar sesión"
+  },
+  "home": {
+    "invoiceName": "Nombre Factura",
+    "date": "Fecha de emisión",
+    "adress": "Dirección del suministro",
+    "total": "Importe",
+    "actions": "Acciones",
+    "downloadPDF": "Descargar PDF",
+    "viewPDF": "Ver PDF"
+  },
+  "profile": {
+    "profile": "Mi perfil",
+    "name": "Nombre",
+    "firstName": "Primer apellido",
+    "lastName": "Segundo apellido",
+    "email": "Email",
+    "adress": "Dirección",
+    "save": "Guardar cambios",
+    "placeholderName": "Nombre",
+    "placeholderFirstName":"Primer Apellido",
+    "placeholderLastName": "Segundo Apellido",
+    "placeholderadress": "Dirección"
+  },
+  "footer": {
+    "conditions": "Términos y condiciones",
+    "privacity": "Política de privacidad"
+  },
+  "errors": {
+    "passwordError": "La contraseña es obligatoria",
+    "emailError": "El campo email es obligatorio",
+    "invalidEmail": "Por favor, ingresa un email válido",
+    "errorMessage": "Hubo un error al intentar iniciar sesión",
+    "name": "El nombre es obligatirio",
+    "firstName": "El Primer apellido es obligatirio",
+    "lastName": "El segundo apellido es obligatirio",
+    "adress": "La direccón es obligaoria"
+  },
+  "succesModal": {
+    "succes": "¡Éxito!",
+    "saveMessage": "Los cambios se han guardado correctamente",
+    "close": "Cerrar"
+  }
+}

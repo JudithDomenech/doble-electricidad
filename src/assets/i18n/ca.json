@@ -1,0 +1,54 @@
+{
+  "login": {
+    "title": "Accés a l'àrea privada",
+    "email": "Correu electrònic",
+    "password": "Contrasenya",
+    "submit": "Accedir",
+    "placeholderPassword": "La teva contrasenya"
+  },
+  "header": {
+    "updateProfile": "Editar perfil",
+    "logout": "Tancar sessió"
+  },
+  "home": {
+    "invoiceName": "Numero Factura",
+    "date": "Data d'emissió",
+    "adress": "Adreça del subministrament",
+    "total": "Import",
+    "actions": "Accions",
+    "downloadPDF": "Descarregar PDF",
+    "viewPDF": "Veure PDF"
+  },
+  "profile": {
+    "profile": "El meu perfil",
+    "name": "Nom",
+    "firstName": "Primer cognom",
+    "lastName": "Segon cognom",
+    "email": "Correu electrònic",
+    "adress": "Adreça",
+    "save": "Desar canvis",
+    "placeholderName": "Nom",
+    "placeholderLastName": "Segon Cognom",
+    "placeholderFirstName": "Primer Cognom",
+    "placeholderadress": "Adreça"
+  },
+  "footer": {
+    "conditions": "Termes i condicions",
+    "privacity": "Política de privacitat"
+  },
+"errors": {
+    "passwordError": "La contrasenya és obligatòria",
+    "emailError": "El camp email és obligatori",
+    "invalidEmail": "Si us plau, introdueix un email vàlid",
+    "errorMessage": "Hi ha hagut un error en intentar iniciar sessió",
+    "name": "El nom és obligatori",
+    "firstName": "El primer cognom és obligatori",
+    "errorLastName": "El segon cognom és obligatori",
+    "adress": "La direcció és obligatòria"
+},
+  "succesModal": {
+    "succes": "Èxit!",
+    "saveMessage": "Els canvis s'han desat correctament",
+    "close": "Tancar"
+  }
+}

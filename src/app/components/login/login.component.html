@@ -1,0 +1,43 @@
+<app-header></app-header>
+
+<body class="form-container">
+    <div class="login">
+        <h2>{{ 'login.title' | translate }}</h2>
+        <!-- Linkea el formulario del html con el ts -->
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <div lass="email">
+                <p class="title-input">{{ 'login.email' | translate }}</p>
+                <div>
+                    <input formControlName="email" class="input_blank" placeholder="DobleElectricidad@email.com" />
+                </div>
+                <!-- Muestra un elemento solo si el campo X ha sido tocado y tiene errores de validación -->
+                <div *ngIf="loginForm.get('email')?.touched && loginForm.get('email')?.invalid">
+                    <small class="error" *ngIf="loginForm.get('email')?.errors?.['required']">{{'errors.emailError' |
+                        translate}}</small>
+                    <small class="error" *ngIf="loginForm.get('email')?.errors?.['email']">{{'errors.invalidEmail' |
+                        translate}}</small>
+                </div>
+            </div>
+            <div class="password">
+                <p translate class="title-input">{{ 'login.password' | translate }}</p>
+                <div>
+                    <input formControlName="password" type="password" class="input_blank"
+                        placeholder="{{'login.placeholderPassword' | translate}}" />
+                </div>
+                <div *ngIf="loginForm.get('password')?.touched && loginForm.get('password')?.invalid">
+                    <small class="error"
+                        *ngIf="loginForm.get('password')?.errors?.['required']">{{'errors.passwordError'
+                        |
+                        translate}}.</small>
+                </div>
+            </div>
+            <!-- Se utiliza la interpolación para mostrar la variable errorMessage  -->
+            <div *ngIf="errorMessage" class="error-message">
+                <p translate class="error">{{ 'errors.errorMessage' | translate }}</p>
+            </div>
+            <div>
+                <button class="button-modal" type="submit">{{ 'login.submit' | translate }}</button>
+            </div>
+        </form>
+    </div>
+</body>

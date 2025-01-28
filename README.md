@@ -1,59 +1,93 @@
-# DobleElectricidad
+# DOBLE ELECTRICIDAD
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.3.
 
-## Development server
+# CONCEPTUAL ANGULAR/IONIC:
 
-To start a local development server, run:
+### P1: ¿Cuál de las siguientes afirmaciones es correcta sobre TypeScript?
 
-```bash
-ng serve
-```
+- **Respuesta correcta**: d) Todo lo anterior
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### P2: ¿Qué decorator se utiliza para configurar la clase de su módulo?
 
-## Code scaffolding
+- **Respuesta correcta**: a) @NgModule
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### P3: ¿Qué decorator de Angular nos permite definir el nombre de la pipe que está disponible globalmente para su uso en cualquier plantilla en la aplicación?
 
-```bash
-ng generate component component-name
-```
+- **Respuesta correcta**: c) Pipe
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### P4: ¿Qué carácter se usa para encadenar múltiples pipes?
 
-```bash
-ng generate --help
-```
+- **Respuesta correcta**: a) |
 
-## Building
+### P5: ¿Para qué se puede utilizar RxJS?
 
-To build the project run:
+- **Respuesta correcta**: c) Ambos
 
-```bash
-ng build
-```
+### P6: ¿Cómo se utilizan los observables?
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+- **Respuesta correcta**: c) Ambos
 
-## Running unit tests
+### P7: ¿Qué es .subscribe?
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+- **Respuesta correcta**: a) Transmite datos de forma asíncrona
 
-```bash
-ng test
-```
+### P8: ¿Qué significa AOT?
 
-## Running end-to-end tests
+- **Respuesta correcta**: a) Compilación anticipada
 
-For end-to-end (e2e) testing, run:
+### P9: ¿Cuál de los siguientes no es un ciclo de vida de una aplicación de hook?
 
-```bash
-ng e2e
-```
+- **Respuesta correcta**: b) ngViewStart
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+### P10: ¿El enrutador es parte de @angular/núcleo?
 
-## Additional Resources
+- **Respuesta correcta**: a) Sí
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### P11: ¿El enrutador es parte de cuál de los siguientes módulos?
+
+- **Respuesta correcta**: d) Ninguna de las anteriores (`@angular/router`.)
+
+### P12: ¿Cuál es la principal ventaja de usar Ionic para el desarrollo de aplicaciones móviles?
+
+- **Respuesta correcta**: c) Desarrollo cruzado con una única base de código
+
+### P13: ¿Qué comando se utiliza para crear un nuevo proyecto en Ionic?
+
+- **Respuesta correcta**: b) ionic start
+
+### P14: ¿Cómo interactúa Ionic con los componentes nativos del dispositivo?
+
+- **Respuesta correcta**: b) A través de plugins de Cordova o Capacitor
+
+# TEST PRÁCTICO:
+
+Crear una aplicación web con HTML/Angular. Esta aplicación tiene que ser el área privada de la empresa
+«Doble Electricidad». Esta área privada tiene que tener un log-in (usuario y contraseña) y dos
+funcionalidades:
+
+1. Consultar facturas: las facturas, que pueden ser un PDF en blanco, se podrán visualizar y
+   descargar. Campos mínimos obligatorios:
+   a. Nombre de la factura
+   b. Fecha de emisión
+   c. Importe
+   d. Dirección del suministro
+
+2. Consultar datos personales: los datos se podrán leer y editar. Campos mínimos obligatorios:
+   a. Nombre titular
+   b. Correo electrónico
+   c. Fecha de alta
+   d. Dirección de envío
+
+Se tendrá que facilitar:
+• Comentarios del Código.
+• Video Demostrativo (puede ser la mínima resolución).
+
+Se valorará uso de:
+• Versiones actuales.
+• Pipers y Angular material.
+• Clases o interfaces necesarias.
+• Directivas, Componetización y SCSS Mixins.
+• Traducciones (multi idioma).
+• Storage.
+• Build.

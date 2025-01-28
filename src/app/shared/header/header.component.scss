@@ -1,0 +1,74 @@
+@use '../../../assets/styles/variables.scss' as *;
+@import '../../app.component.scss';
+
+// Estilos del header
+
+@mixin logo-container-layout($justify-content: center) {
+    flex: 1;
+    display: flex;
+    justify-content: $justify-content;
+}
+
+@mixin logo-style($width: 15%, $max-width: 200px) {
+    width: $width;
+    height: auto;
+    object-fit: contain;
+    max-width: $max-width;
+}
+
+@mixin icon-style($scale: 2) {
+    transform: scale($scale);
+}
+
+@mixin icon-list-style($color: #2C3D7A, $margin-right: 0.5rem) {
+    color: $color;
+    margin-right: $margin-right;
+}
+
+@mixin header-button-layout($align-items: center) {
+    display: flex;
+    align-items: $align-items;
+}
+
+
+@mixin logged-in-header($justify-content: space-between) {
+    justify-content: $justify-content;
+}
+
+@mixin logged-in-logo-container($justify-content: flex-start) {
+    justify-content: $justify-content;
+}
+
+.header {
+    @include bar($background-color, 0, .5rem 0, center, top);
+}
+
+.logo-container {
+    // Aquí si quisiesemos cambiar al posición del logo lo haríamos de la siguiente manera: @include logo-container-layout(rigth);
+    @include logo-container-layout;
+}
+
+.logo {
+    @include logo-style;
+}
+
+.header .icon {
+    @include icon-style;
+}
+
+.icon-list {
+    @include icon-list-style;
+}
+
+.header-button {
+    @include header-button-layout;
+}
+
+// Estilos cuando el usuario está logueado
+.header.isLoggedIn {
+    @include logged-in-header;
+}
+
+.header.isLoggedIn .logo-container {
+    @include logged-in-logo-container;
+}

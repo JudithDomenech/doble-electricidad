@@ -1,0 +1,121 @@
+@use '../assets/styles/variables.scss' as *;
+
+// estilos genéricos de la app
+
+@mixin center-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin button-style($width: 100%, $background-color: $button-color,
+    $text-color: white,
+    $padding: 1rem 1rem, $margin-top: 3rem) {
+    box-shadow: 0px 40px 40px rgba(44, 103, 243, 0.15);
+    width: $width;
+    padding: $padding;
+    margin-top: $margin-top;
+    border: none;
+    font-size: 16px;
+    color: $text-color;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background: $background-color;
+
+    &:hover {
+        background-color: $button-hover-color;
+    }
+}
+
+@mixin input-style($background-color: $background-input, $padding: 1rem, $color: #082645) {
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 2px solid rgba(44, 61, 122, 0.15);
+    outline: none;
+    padding: $padding;
+    color: $color;
+    background-color: $background-color;
+    box-sizing: border-box;
+}
+
+
+@mixin title-style($font-size: 1rem, $color: $text-color, $margin-bottom: .7rem, $text-align: left, ) {
+    font-size: $font-size;
+    line-height: 141%;
+    margin-bottom: $margin-bottom;
+    color: $color;
+    font-weight: 600;
+}
+
+@mixin bar($background-color: $background-color, $padding: 2rem, $margin: 1rem, $justify-content: center, $position: top) {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    justify-content: $justify-content;
+    width: 100%;
+    #{$position}: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: $background-color;
+    padding: $padding;
+    margin: $margin;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background-color: $background-color;
+    @include center-items;
+}
+
+.form-container {
+    @include center-items;
+    background-color: $background-color;
+}
+
+.title-input {
+    @include title-style;
+}
+
+
+.input_blank {
+    @include input-style;
+}
+
+.button-modal {
+    @include center-items;
+    // Aquí si quisiesemos cambiar el stilo del botón, lo haríamos de la siguiente manera: @include button-style(red, white, 1rem 1rem, 1rem);
+    @include button-style;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 1.5rem;
+    color: $text-color;
+}
+
+form {
+    width: 90%;
+}
+
+::placeholder {
+    color: rgb(204, 204, 255);
+}
+
+// estilos para el formulario cuando es valido o no
+.ng-valid:not(form).ng-touched {
+    border-color: green;
+}
+
+.ng-invalid:not(form).ng-touched {
+    border-color: red;
+}
+
+.error {
+    color: red;
+}

@@ -1,0 +1,38 @@
+@use '../../../assets/styles/variables.scss' as *;
+@import '../../app.component.scss';
+
+// estilos del componente home
+body {
+    background-color: $background-color;
+    height: 100%;
+    width: 100%;
+}
+
+@mixin container-style($background-color: $background-color, $padding: 0 10px) {
+    background-color: $background-color;
+    height: 100%;
+    padding: $padding;
+    @include center-items;
+}
+
+@mixin text-style($text-color: $text-color, $font-size: 1rem, $font-weight: 500) {
+    color: $text-color;
+    font-size: $font-size;
+    font-weight: $font-weight;
+}
+
+@mixin icon-spacing($margin-left: 8px) {
+    margin-left: $margin-left;
+}
+
+.facturas-container {
+    @include container-style;
+}
+
+.title-text {
+    @include text-style;
+}
+
+.icon-spacing {
+    @include icon-spacing;
+}

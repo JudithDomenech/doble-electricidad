@@ -1,0 +1,15 @@
+<mat-toolbar class="footer-content">
+    <select class="lang-button" [(ngModel)]="selectedLang" (change)="onChange($event)">
+        <option *ngFor="let option of options" [value]="option.value">{{ option.display }}</option>
+    </select>
+
+    <div class="footer-links">
+        <a mat-button href="https://support.wix.com/es/article/crear-una-pol%C3%ADtica-de-t%C3%A9rminos-y-condiciones">
+            {{ 'footer.conditions' | translate }}
+        </a>
+        <a mat-button href="https://portal.mineco.gob.es/es-es/ministerio/Paginas/Politica_de_privacidad.aspx">
+            {{ 'footer.privacity' | translate }}
+        </a>
+        <small>&copy; {{ today | date:'yyyy' }} Doble Electricidad</small>
+    </div>
+</mat-toolbar>

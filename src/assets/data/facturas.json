@@ -1,0 +1,112 @@
+[
+  {
+    "datosFactura": {
+      "nombreFactura": "Factura 1",
+      "CUPS": "ES0021000000000000AA",
+      "periodoFacturacion": "Enero-2025",
+      "fechaEmision": "2025-01-01"
+    },
+    "datosCliente": {
+      "nombre": "George Bluth",
+      "direccion": "Avenida de la Innovación 45, Ciudad Empresarial",
+      "CIF": "A12345678"
+    },
+    "datosSuministro": {
+      "PotenciaContratada": "5.0kW",
+      "tension": "220V",
+      "tarifa": "2.0",
+      "direccion": "Avenida de la Innovación 45"
+    },
+    "facturacion": {
+      "importe": 120.50
+    }
+  },
+  {
+    "datosFactura": {
+      "nombreFactura": "Factura 2",
+      "CUPS": "ES0021000000000001BB",
+      "periodoFacturacion": "Enero-2025",
+      "fechaEmision": "2025-01-05"
+    },
+    "datosCliente": {
+      "nombre": "George Bluth",
+      "direccion": "Avenida de la Innovación 45",
+      "CIF": "A12345678"
+    },
+    "datosSuministro": {
+      "PotenciaContratada": "6.2kW",
+      "tension": "230V",
+      "tarifa": "2.1",
+      "direccion": "Avenida de la concepcion 45"
+    },
+    "facturacion": {
+      "importe": 140.75
+    }
+  },
+  {
+    "datosFactura": {
+      "nombreFactura": "Factura 3",
+      "CUPS": "ES0021000000000002CC",
+      "periodoFacturacion": "Enero-2025",
+      "fechaEmision": "2025-01-08"
+    },
+    "datosCliente": {
+      "nombre": "George Bluth",
+      "direccion": "Avenida de la Innovación 45, Ciudad Empresarial",
+      "CIF": "A12345678"
+    },
+    "datosSuministro": {
+      "PotenciaContratada": "5.8kW",
+      "tension": "220V",
+      "tarifa": "2.2",
+      "direccion": "Calle nueva 45"
+    },
+    "facturacion": {
+      "importe": 160.30
+    }
+  },
+  {
+    "datosFactura": {
+      "nombreFactura": "Factura 4",
+      "CUPS": "ES0021000000000003DD",
+      "periodoFacturacion": "Enero-2025",
+      "fechaEmision": "2025-01-12"
+    },
+    "datosCliente": {
+      "nombre": "George Bluth",
+      "direccion": "Avenida de la Innovación 45, Ciudad Empresarial",
+      "CIF": "A12345678"
+    },
+    "datosSuministro": {
+      "PotenciaContratada": "4.5kW",
+      "tension": "210V",
+      "tarifa": "2.3",
+      "direccion": "Carretera de la sierra s/n"
+    },
+    "facturacion": {
+      "importe": 130.40
+    }
+  },
+  {
+    "datosFactura": {
+      "nombreFactura": "Factura 5",
+      "CUPS": "ES0021000000000004EE",
+      "periodoFacturacion": "Enero-2025",
+      "fechaEmision": "2025-01-15"
+    },
+    "datosCliente": {
+      "nombre": "George Bluth",
+      "direccion": "Avenida de la Innovación 45, Ciudad Empresarial",
+      "CIF": "A12345678"
+    },
+    "datosSuministro": {
+      "PotenciaContratada": "6.0kW",
+      "tension": "240V",
+      "tarifa": "3.0",
+      "direccion": "Poligono industrial s/n"
+    },
+    "facturacion": {
+      "importe": 150.90
+    }
+  }
+]

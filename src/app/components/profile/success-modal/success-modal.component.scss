@@ -1,0 +1,15 @@
+@import '../../../app.component.scss';
+
+.modal-container {
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    color: #4caf50;
+}
+
+button {
+    @include button-style($width: 100%, $margin-top: 1rem);
+    margin-bottom: .5rem;
+}

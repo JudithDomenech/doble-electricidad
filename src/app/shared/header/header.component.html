@@ -1,0 +1,19 @@
+<!-- Depende de si esta el usuario ha hecho login o no se le pone una clase u otra -->
+<mat-toolbar class="header" [ngClass]="{'isLoggedIn': isLoggedIn}">
+    <div class="logo-container">
+        <img class="logo" src="assets/images/logo.png" alt="Doble Electricidad">
+    </div>
+
+    <div class="header-button" *ngIf="isLoggedIn">
+        <button mat-button [matMenuTriggerFor]="menu">
+            <i class="fa-solid fa-circle-user icon"></i>
+        </button>
+        <mat-menu #menu="matMenu">
+            <!-- Cuando se hace click en el botón llama al método indiacado  -->
+            <button mat-menu-item (click)="goToProfile()"><i class="fa-solid fa-user icon-list"></i>{{
+                'header.updateProfile' | translate }}</button>
+            <button mat-menu-item (click)="logout()"><i class="fa-solid fa-arrow-right-from-bracket icon-list"></i>{{
+                'header.logout' | translate }}</button>
+        </mat-menu>
+    </div>
+</mat-toolbar>

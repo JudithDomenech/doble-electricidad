@@ -1,0 +1,52 @@
+@use '../../../assets/styles/variables.scss' as *;
+@import '../../app.component.scss';
+
+
+@mixin footer-links($gap: 15px, $text-color: $text-color, $hover-color: #2C67F3) {
+    display: flex;
+    gap: $gap;
+
+    a {
+        text-decoration: none;
+        color: $text-color;
+
+        &:hover {
+            color: $hover-color;
+        }
+    }
+}
+
+@mixin select($background-color: #f8f9fa, $border-color: #2C67F3, $hover-border-color: #012b55) {
+    appearance: none;
+    border: 1px solid $border-color;
+    background-color: $background-color;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #444;
+    outline: none;
+    transition: all 0.3s ease;
+
+    &:hover {
+        border-color: $hover-border-color;
+    }
+
+    &:focus {
+        border-color: $hover-border-color;
+        box-shadow: 0 0 4px rgba(44, 103, 243, 0.3);
+    }
+}
+
+.footer-content {
+    @include bar($background-color, 0rem 3rem, 0, space-between, bottom);
+}
+
+.footer-links {
+    @include footer-links(20px, #444, #2C67F3);
+}
+
+select {
+    @include select();
+    max-width: 200px;
+    margin: 0 2rem;
+}

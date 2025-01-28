@@ -1,0 +1,48 @@
+<!-- Tabla que utiliza angular material -->
+<div class="facturas-container">
+    <app-header></app-header>
+    <table mat-table [dataSource]="facturas">
+        <ng-container matColumnDef="nombre">
+            <th class=" title-text" mat-header-cell *matHeaderCellDef> {{ 'home.invoiceName' | translate }} </th>
+            <!-- utilización de Pipe tipo uppercase -->
+            <td mat-cell *matCellDef="let factura">{{ factura.datosFactura.nombreFactura | uppercase}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="CUPS">
+            <th class=" title-text" mat-header-cell *matHeaderCellDef> CUPS </th>
+            <td mat-cell *matCellDef="let factura">{{ factura.datosFactura.CUPS }}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="fechaEmision">
+            <th class="title-text" mat-header-cell *matHeaderCellDef> {{ 'home.date' | translate }}</th>
+            <!-- utilización de Pipe tipo Date -->
+            <td mat-cell *matCellDef="let factura">{{ factura.datosFactura.fechaEmision | date:'dd/MM/yyyy' }}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="importe">
+            <th class="title-text" mat-header-cell *matHeaderCellDef> {{ 'home.total' | translate }} </th>
+            <td mat-cell *matCellDef="let factura">{{ factura.facturacion.importe}} €
+            </td>
+        </ng-container>
+
+        <ng-container matColumnDef="direccion">
+            <th class=" title-text" mat-header-cell *matHeaderCellDef> {{ 'home.adress' | translate }}</th>
+            <td mat-cell *matCellDef="let factura">{{ factura.datosSuministro.direccion }}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="acciones">
+            <th class="title-text" mat-header-cell *matHeaderCellDef> {{ 'home.actions' | translate }} </th>
+            <td mat-cell *matCellDef="let factura">
+                <!-- Uso de iconos de fontawesone -->
+                <button mat-button (click)="downloadInvoices(factura)">{{ 'home.downloadPDF' | translate }} <i
+                        class="fa-solid fa-file-arrow-down icon-spacing "></i></button>
+                <button mat-button (click)="viewInvoices(factura)">{{ 'home.viewPDF' | translate }} <i
+                        class="fa-solid fa-eye icon-spacing "></i></button>
+            </td>
+        </ng-container>
+
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+</div>
