@@ -6,23 +6,23 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 
 ### P1: ¿Cuál de las siguientes afirmaciones es correcta sobre TypeScript?
 
-- **Respuesta correcta**: d) Todo lo anterior
+-  d) Todo lo anterior
 
 ### P2: ¿Qué decorator se utiliza para configurar la clase de su módulo?
 
-- **Respuesta correcta**: a) @NgModule
+-  a) @NgModule
 
 ### P3: ¿Qué decorator de Angular nos permite definir el nombre de la pipe que está disponible globalmente para su uso en cualquier plantilla en la aplicación?
 
-- **Respuesta correcta**: c) Pipe
+- c) Pipe
 
 ### P4: ¿Qué carácter se usa para encadenar múltiples pipes?
 
-- **Respuesta correcta**: a) |
+- a) |
 
 ### P5: ¿Para qué se puede utilizar RxJS?
 
-- **Respuesta correcta**: c) Ambos
+- c) Ambos
 
 ### P6: ¿Cómo se utilizan los observables?
 
@@ -30,35 +30,35 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 
 ### P7: ¿Qué es .subscribe?
 
-- **Respuesta correcta**: a) Transmite datos de forma asíncrona
+-  a) Transmite datos de forma asíncrona
 
 ### P8: ¿Qué significa AOT?
 
-- **Respuesta correcta**: a) Compilación anticipada
+- a) Compilación anticipada
 
 ### P9: ¿Cuál de los siguientes no es un ciclo de vida de una aplicación de hook?
 
-- **Respuesta correcta**: b) ngViewStart
+-  b) ngViewStart
 
 ### P10: ¿El enrutador es parte de @angular/núcleo?
 
-- **Respuesta correcta**: a) Sí
+-  a) Sí
 
 ### P11: ¿El enrutador es parte de cuál de los siguientes módulos?
 
-- **Respuesta correcta**: d) Ninguna de las anteriores (`@angular/router`.)
+- d) Ninguna de las anteriores (`@angular/router`.)
 
 ### P12: ¿Cuál es la principal ventaja de usar Ionic para el desarrollo de aplicaciones móviles?
 
-- **Respuesta correcta**: c) Desarrollo cruzado con una única base de código
+- c) Desarrollo cruzado con una única base de código
 
 ### P13: ¿Qué comando se utiliza para crear un nuevo proyecto en Ionic?
 
-- **Respuesta correcta**: b) ionic start
+- b) ionic start
 
 ### P14: ¿Cómo interactúa Ionic con los componentes nativos del dispositivo?
 
-- **Respuesta correcta**: b) A través de plugins de Cordova o Capacitor
+- b) A través de plugins de Cordova o Capacitor
 
 # TEST PRÁCTICO:
 
