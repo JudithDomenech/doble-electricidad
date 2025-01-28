@@ -26,7 +26,7 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 
 ### P6: ¿Cómo se utilizan los observables?
 
-- **Respuesta correcta**: c) Ambos
+-  c) Ambos
 
 ### P7: ¿Qué es .subscribe?
 
